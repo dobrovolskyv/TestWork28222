@@ -1,0 +1,19 @@
+{
+    "extends": [
+        "stylelint-config-standard-scss"
+    ],
+    "rules": {
+        "selector-max-id": 10,
+        "unit-allowed-list": ["%","deg", "px", "rem", "ms", "vh", "vw"],
+        "color-function-notation": "legacy",
+        "media-feature-range-notation": null,
+        "selector-class-pattern": [
+            "[a-z][a-zA-Z0-9]+$",
+            {
+                "message": "Class name should be camelCase",
+                "severity": "error"
+            }
+        ]
+    },
+    "defaultSeverity": "warning"
+}
